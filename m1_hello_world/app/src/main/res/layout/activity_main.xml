@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,8 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:textSize="50sp"
         android:text="0"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,34 +23,38 @@
 
     <TextView
         android:id="@+id/text"
-        android:text="Все места свободны"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="#2FAE44"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/green_alert"
+        android:textColor="#2FAE44"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/buttonMinus"
-        android:text="-"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
         android:padding="20dp"
-        android:layout_height="wrap_content"/>
+        android:enabled="false"
+        android:text="-"
+        app:cornerRadius="15sp" />
 
     <Button
         android:id="@+id/buttonPlus"
-        android:text="+"
-        android:padding="20dp"
-        android:layout_gravity="bottom|end"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="20dp"
+        android:text="+"
+        app:cornerRadius="15sp" />
 
     <Button
         android:id="@+id/resetButton"
-        android:visibility="invisible"
-        android:text="Сброс"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Сброс"
+        android:visibility="invisible" />
 </FrameLayout>
