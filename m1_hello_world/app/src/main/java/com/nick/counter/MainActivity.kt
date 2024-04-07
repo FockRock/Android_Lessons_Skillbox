@@ -8,7 +8,7 @@ import com.nick.counter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private var count = 0
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
