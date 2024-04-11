@@ -4,4 +4,6 @@
     <string name="reset">Сброс</string>
     <string name="blue_alert">Осталось мест:</string>
     <string name="red_alert">Пассажиров слишком много!</string>
+    <string name="no_seats">Все места заняты!</string>
+    <string name="seats_number">Свободных мест:</string>
 </resources>

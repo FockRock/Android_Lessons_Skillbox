@@ -1,7 +1,9 @@
 package com.nick.counter
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.nick.counter.databinding.ActivityMainBinding
 
@@ -29,14 +31,25 @@ class MainActivity : AppCompatActivity() {
                 check(count)
             }
         }
+
+        binding.bReset.setOnClickListener {
+            count = 0
+            check(count)
+        }
     }
 
-    private fun check (number: Int) {
+    @SuppressLint("SetTextI18n")
+    private fun check(number: Int) {
+        if (number == 0) {
+            binding.tvMainMessage.text = getString(R.string.green_alert)
+            binding.bReset.isInvisible = true
+            binding.tvNumber.text = count.toString()
+        }
         if (number > 0) {
-            binding.tvMainMessage.text = "Свободных мест: ${50-number}"
+            binding.tvMainMessage.text = getString(R.string.seats_number) + " ${50 - number}"
         }
         if (number == 50) {
-            binding.tvMainMessage.text = "Все места заняты!"
+            binding.tvMainMessage.text = getString(R.string.no_seats)
             binding.bReset.isVisible = true
         } else binding.bReset.isVisible = false
     }
