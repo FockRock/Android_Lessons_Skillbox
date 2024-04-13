@@ -1,6 +1,7 @@
 package com.nick.counter
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.isInvisible
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "ResourceAsColor")
     private fun check(number: Int) {
         if (number == 0) {
             binding.tvMainMessage.text = getString(R.string.green_alert)
@@ -47,10 +48,12 @@ class MainActivity : AppCompatActivity() {
         }
         if (number > 0) {
             binding.tvMainMessage.text = getString(R.string.seats_number) + " ${50 - number}"
+            binding.tvMainMessage.setTextColor(Color.parseColor("#352DA9"))
         }
         if (number == 50) {
             binding.tvMainMessage.text = getString(R.string.no_seats)
             binding.bReset.isVisible = true
+            binding.tvMainMessage.setTextColor(Color.parseColor("#D63030"))
         } else binding.bReset.isVisible = false
     }
 }
