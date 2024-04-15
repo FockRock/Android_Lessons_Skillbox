@@ -7,43 +7,53 @@
 
     <TextView
         android:id="@+id/tvMainMessage"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/green_alert"
-        android:textSize="30sp"
-        android:textColor="@color/green"/>
+        android:textColor="@color/green"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/bPlus"
         android:layout_width="wrap_content"
-        android:layout_gravity="bottom|right"
         android:layout_height="wrap_content"
-        android:text="+" />
+        android:layout_gravity="bottom|right"
+
+        android:layout_margin="10sp"
+        android:padding="24dp"
+        android:text="+"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/bMinus"
         android:layout_width="wrap_content"
-        android:layout_gravity="bottom|left"
         android:layout_height="wrap_content"
-        android:text="-" />
+        android:layout_gravity="bottom|left"
+        android:layout_margin="10sp"
+        android:enabled="false"
+        android:padding="24dp"
+        android:text="-"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/bReset"
-        android:layout_margin="10sp"
-        android:visibility="invisible"
-        android:layout_gravity="top|center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reset" />
+        android:layout_gravity="top|center"
+        android:layout_margin="10sp"
+        android:padding="24dp"
+        android:text="@string/reset"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/tvNumber"
-        android:layout_gravity="bottom|center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        android:text="0"
         android:textColor="@color/grey"
-        android:textSize="50sp"
-        android:padding="10sp"
-        android:text="0" />
+        android:textSize="60sp" />
 </FrameLayout>

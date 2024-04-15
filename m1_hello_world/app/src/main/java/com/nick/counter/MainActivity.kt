@@ -42,15 +42,20 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n", "ResourceAsColor")
     private fun check(number: Int) {
         if (number == 0) {
+            binding.bMinus.isEnabled = false
+            binding.bPlus.isEnabled = true
             binding.tvMainMessage.text = getString(R.string.green_alert)
             binding.bReset.isInvisible = true
             binding.tvNumber.text = count.toString()
         }
         if (number > 0) {
+            binding.bMinus.isEnabled = true
+            binding.bPlus.isEnabled = true
             binding.tvMainMessage.text = getString(R.string.seats_number) + " ${50 - number}"
             binding.tvMainMessage.setTextColor(Color.parseColor("#352DA9"))
         }
         if (number == 50) {
+            binding.bPlus.isEnabled = false
             binding.tvMainMessage.text = getString(R.string.no_seats)
             binding.bReset.isVisible = true
             binding.tvMainMessage.setTextColor(Color.parseColor("#D63030"))
