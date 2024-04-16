@@ -1,4 +1,4 @@
-package com.nick.m2_layout
+package com.example.m2_layout
 
 import org.junit.Test
 
