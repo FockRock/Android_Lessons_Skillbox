@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">m3_constraint</string>
+    <string name="qotsa">Queens of the Stone Age</string>
+    <string name="one">You Think I Ain\'t Worth a Dollar, But I Feel Like a Millionaire</string>
+    <string name="two">No One Knows</string>
+    <string name="three">First It Giveth</string>
+    <string name="four">A Song for the Dead</string>
+    <string name="five">The Sky Is Fallin\'</string>
+    <string name="six">Six Shooter</string>
+    <string name="seven">Hangin\' Tree</string>
+    <string name="eight">Go with the Flow</string>
+    <string name="nine">Gonna Leave You</string>
+    <string name="ten">Do It Again</string>
+    <string name="eleven">God Is in the Radio</string>
+    <string name="twelve">Another Love Song</string>
+    <string name="thirteen">A Song for the Deaf</string>
+    <string name="fourteen">Mosquito Song</string>
+    <string name="fifteen">Everybody\'s Gonna Be Happy</string>
+</resources>
