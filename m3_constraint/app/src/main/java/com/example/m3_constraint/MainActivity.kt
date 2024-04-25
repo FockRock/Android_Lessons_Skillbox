@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         bindingClass.bForward.setOnClickListener {
-            index ++
+            bindingClass.tArtist.text = getText(R.string.qotsa)
+            index += 1
             when (index) {
                 1 -> bindingClass.tSong.text = getText(R.string.one)
                 2 -> bindingClass.tSong.text = getText(R.string.two)
@@ -43,8 +44,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        bindingClass.bForward.setOnClickListener {
-            index-=1
+        bindingClass.bBack.setOnClickListener {
+            bindingClass.tArtist.text = getText(R.string.qotsa)
+            index -= 1
             when (index) {
                 1 -> bindingClass.tSong.text = getText(R.string.one)
                 2 -> bindingClass.tSong.text = getText(R.string.two)
