@@ -1,4 +1,4 @@
-package com.nick.m3_components
+package com.example.m4_components
 
 import org.junit.Test
 
