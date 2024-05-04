@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">m4_components</string>
+    <string name="sex">Пол</string>
+    <string name="male">M</string>
+    <string name="female">Ж</string>
+    <string name="notification_enabler">Получать уведомления</string>
+    <string name="authorization_notification">Об авторизации на устройстве</string>
+    <string name="news_notification">О новинках и предложениях</string>
+    <string name="points">Баллы</string>
+    <string name="save">Сохранить</string>
 </resources>
